@@ -28,7 +28,7 @@ function App() {
         const signer = provider.getSigner();
         const address = await signer.getAddress();
         setAccount(address);
-        let contractAddress = "Your Contract Address Here";
+        let contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 
         const contract = new ethers.Contract(
           contractAddress,
@@ -56,12 +56,12 @@ function App() {
       )}
 
       <div className="App">
-        <h1 style={{ color: "white" }}>Gdrive 3.0</h1>
+        <h1 style={{ color: "Black" }}>Decentralised Depository Using Blockchain</h1>
         <div class="bg"></div>
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>
 
-        <p style={{ color: "white" }}>
+        <p style={{ color: "Black" }}>
           Account : {account ? account : "Not connected"}
         </p>
         <FileUpload
